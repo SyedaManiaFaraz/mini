@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: white;
+    height: 68px;
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+    color: black;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+img{
+    margin-left: 110px!important;
+    margin-top: 20px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 130px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 25px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav button{
+    padding: 8px 10px 8px 10px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.checkbtn{
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media(max-width:650px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: grey;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover {
+        background: none;
+        color: white;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    img{
+        height: 20px;
+        width: 20px;
+        margin-left:30px !important;
+    }
+    h1{
+        font-size: 30px;
+        margin-left: 5px;
+    }
+
+}
+
+.text>h2{
+    margin-left: 90px !important;
+    margin-top: 80px;
+    font-size: 80px;
+}
+.text>p{
+    margin-left: 90px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+.book{
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 280px;
+    margin-left: 90px;
+    background-color: black;
+    color: white;
+    padding: 20px 25px 20px 25px;
+}
+.car{
+    margin-top: -550px;
+    margin-left: 850px;
+} 
+.box{
+    margin-top: 10px;
+}
+.box1>.btn{
+    color: black;
+    background: #B9FF66;
+    border: #B9FF66;
+    width: 150px;
+    height: 40px;
+    font-size: 30px;
+    margin-left: 95px;
+    margin-top: 80px;
+} 
+.box1>p{
+    margin-left: 300px;
+    margin-top: -40px;
+    font-size: 18px;
+}
+.box2{
+    margin-top: 50px;
+    margin-left: -90px;
+}
+.box2>img{
+    width: 1600px;
+}
+.box3>p{
+    margin-left: 500px;
+    margin-top: -40px;
+    font-size: 18px;
+}
+.box3>.b3{
+    color: black;
+    background: #B9FF66;
+    border: #B9FF66;
+    width: 350px;
+    height: 40px;
+    font-size: 30px;
+    margin-left: 95px ;
+    margin-top: 80px;
+}
+.box4>img{
+    margin-top: 50px;
+    width: 1600px;
+}
+.box4{
+    margin-left: -90px;
+}
+.box5 button{
+    color: black;
+    background: #B9FF66;
+    border: #B9FF66;
+    width: 250px;
+    height: 40px;
+    font-size: 36px;
+    margin-left: 95px ;
+    margin-top: 80px;
+}
+.box5>p{
+    margin-left: 400px;
+    margin-top: -40px;
+    font-size: 18px;
+}
+.box6>img{
+    margin-top: 80px; 
+    width: 1500px;
+}
+
+
+
+@media(max-width:375px){
+    .text>h2{
+        margin-left: 15px !important;
+        margin-top: 10px !important;
+        font-size: 40px !important;
+    }
+    .text>p{
+        margin-left: 15px !important;
+        margin-top: 15px !important;
+        font-size: 15px !important; 
+    } 
+     .book{
+        border-radius: 15px !important;
+        margin-top: 20px !important;
+        font-size: 20px !important;
+        width: 280px !important;
+        margin-left: 15px !important;
+        background-color: black !important;
+        color: white !important;
+        padding: 20px 25px 20px 25px !important;
+    } 
+    .car{
+       margin-left: 25px !important;
+    }
+    .car>img{
+        height: 100% !important;
+        width: 200px !important; 
+        margin-top: 580px !important;
+    }
+    .box{
+        margin-left: -12px !important;
+    }
+    .box1>.btn{
+        color: black !important;
+        background: #B9FF66 !important;
+        border: #B9FF66 !important;
+        width: 150px !important;
+        height: 30px !important;
+        font-size: 30px !important;
+        margin-left: 75px !important;
+        margin-top: 30px !important;
+    } 
+    .box1>p{
+        margin-left: 25px !important;
+        margin-top: 21px !important;
+        font-size: 15px !important;
+    }
+    .box2{
+        margin-top: 20px !important;
+        margin-left: -30px !important;
+    }
+    .box2>img{
+        width: 350px !important;
+        height: 100px !important;
+    }
+    .box3>.b3{
+        color: black !important;
+        background: #B9FF66 !important;
+        border: #B9FF66 !important;
+        width: 250px !important;
+        height: 40px !important;
+        font-size: 20px !important;
+        margin-left: 35px !important;
+        margin-top: 50px !important;
+    }
+    .box3>p{
+        margin-left: 25px !important;
+        margin-top: 20px !important;
+        font-size: 18px !important;
+    }
+    .box4{
+        margin-left: -30px !important;
+    }
+    .box4>img{
+        margin-top: 40px !important;
+        width: 350px !important;
+        height: 40% !important;
+    }
+    .box5 button{
+        color: black !important;
+        background: #B9FF66 !important;
+        border: #B9FF66 !important;
+        width: 200px!important;
+        height: 40px !important;
+        font-size: 30px !important;
+        margin-left: 45px !important;
+        margin-top: 50px !important;
+    }
+    .box5>p{
+        margin-left: 25px !important;
+        margin-top: 20px !important;
+        font-size: 18px !important;
+    }
+    .box6>img{
+        margin-top: 40px !important; 
+        width: 260px !important;
+        height: 40% !important;
+    }
+}
+
+@media ( max-width : 768px ){
+    .text>h2{
+        margin-left: 50px !important;
+        margin-top: 10px;
+        font-size: 80px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: grey;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover {
+        background: none;
+        color: white;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    img{
+        height: 20px;
+        width: 20px;
+        margin-left:30px !important;
+    }
+    h1{
+        font-size: 30px;
+        margin-left: 5px;
+    }
+    .text>p{
+        margin-left: 100px ;
+        margin-top: 40px ;
+        font-size: 22px ; 
+    } 
+    .book{
+        border-radius: 15px;
+        margin-top: 30px;
+        font-size: 20px;
+        width: 300px;
+        margin-left: 150px;
+        background-color: black;
+        color: white;
+        padding: 20px 25px 20px 25px;
+    } 
+    .car{
+        margin-top: -550px;
+        margin-left: 150px;
+    } 
+    .car>img{
+        height: 100%;
+        width: 400px; 
+        margin-top: 580px;
+    }
+    .box{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .box1>.btn{
+        color: black;
+        background: #B9FF66;
+        border: #B9FF66;
+        width: 400px;
+        height: 40px;
+        font-size: 40px;
+        margin-left: 95px;
+        margin-top: 30px;
+    } 
+    .box1>p{
+        margin-left: 55px;
+        margin-top: 21px;
+        font-size: 18px;
+    }
+    .box2{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .box2>img{
+        width: 650px;
+        height: 200px;
+    }
+    .box3>.b3{
+        color: black;
+        background: #B9FF66;
+        border: #B9FF66;
+        width: 450px;
+        height: 45px;
+        font-size: 40px;
+        margin-left: 75px ;
+        margin-top: 50px;
+    }
+    .box3>p{
+        margin-left: 60px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .box4{
+        margin-left: 50px;
+    }
+    .box4>img{
+        margin-top: 40px;
+        width: 500px;
+        height: 50%;
+    }
+    .box5 button{
+        color: black;
+        background: #B9FF66;
+        border: #B9FF66;
+        width: 250px;
+        height: 40px;
+        font-size: 30px;
+        margin-left: 155px ;
+        margin-top: 50px;
+    }
+    .box5>p{
+        margin-left: 75px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .box6>img{
+        margin-top: 40px; 
+        width: 560px;
+        height: 50%;
+    }
+}
+
+.black{
+    box-sizing: border-box;
+    background-color: black;
+    margin: 120px;
+    border-radius: 15px;
+}
+.black>h5{
+    color: white !important;
+}
